@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  <style>
+    p{
+     color:rgb(255, 255, 255)
+    }
+  </style>
+  <style>
+    a{
+     color:rgb(255, 255, 255)
+    }
+  </style>
+	<style>
+		body{
+			transition: 0.5s;
+		}
+	</style>
+  </head>
+  <body>
+    <theme-button value="dark" id="btn" size="3"></theme-button>
+    <script>
+      document.body.style.backgroundColor = "#424242";
+      btn.addEventListener("change", e => {
+        if (e.detail === 'dark') {
+          document.body.style.backgroundColor = "#424242";
+        }
+        else {
+          document.body.style.backgroundColor = "aliceblue";
+        }
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <p>来自<a href="https://home.120322.xyz">QUAN</a></p>
+  </body>
+</html>
